@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<head>
+	<meta charset="utf-8"><!-- 文字コード指定。ここはこのままで。 -->
+        <title>首都圏近郊の山(初回登録)</title>
+	<style> h1 {font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体'}
+		h1 {text-align:center}
+		h2 {font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体'}
+		body {font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体' }
+		div {text-align:center}
+		body {background-color: #90ee90; }</style>
+</head>
+<body>
+<h1>初回登録手続き</h1>
+<hr color="black">
+パスワードおよびメールアドレス以外の情報は本サイトの掲示板による投稿を行なう際に、公開される情報となっておりますので、あらかじめご了承ください。<br>
+以下のフォームの項目をすべて入力して、内容が正しければ送信ボタンを押してください。
+<br>
+<form method="POST" action="send_test.php"><br>
+	ユーザー名：<input type="text" name="user" size="30" placeholder="本名でなくても構いません(30字以内)"><br><br>
+	メールアドレス:<input type="text" name="mail" size="50" placeholder="使用されている端末のアドレスをご記入ください"><br><br>
+	パスワード：<input type="password" name="pas" size="27" placeholder="20字以内でご記入ください"><br>
+	　　　　　　<input type="password" name="kaku" size="27" placeholder="確認のためもう一度ご記入ください"><br>※パスワードはログインの際に必要となりますので、大切に保管しておいてください。<br><br>
+	年齢：<input type="number" name="toshi" min="10" max="100"><br>※半角数字でご記入ください<br><br>
+	登山歴：<select name="reki">
+		<option value="1年未満" label="1年未満">1年未満</option>
+		<option value="1年以上3年未満" label="1年以上3年未満">1年以上3年未満</option>
+		<option value="3年以上5年未満" label="3年以上5年未満">3年以上5年未満</option>
+		<option value="5年以上10年未満" label="5年以上10年未満">5年以上10年未満</option>
+		<option value="10年以上" label="10年以上">10年以上</option></select><br><br>
+	登山頻度：<select name="hin">
+		<option value="普段は登らない" label="普段は登らない">普段は登らない</option>
+		<option value="年に1回程度" label="年に1回程度">年に1回程度</option>
+		<option value="年に3,4回程度" label="年に3,4回程度">年に3,4回程度</option>
+		<option value="月に1回程度" label="月に1回程度">月に1回程度</option>
+		<option value="月に2回程度" label="月に2回程度">月に2回程度</option>
+		<option value="毎週" label="毎週">毎週</option></select><br><br>
+	<input type="submit" name="send" value="送信"><br><br>
+</form>
+</body>
+</html>
